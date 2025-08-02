@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5350686683810322044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1182834069111924432}
+  - component: {fileID: -5560794018138865901}
+  - component: {fileID: 850970203316228443}
+  - component: {fileID: -2651218574011533431}
+  - component: {fileID: 5776933717462065118}
+  m_Layer: 0
+  m_Name: SoftBallPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1182834069111924432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350686683810322044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.68585, y: -2.48831, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5560794018138865901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350686683810322044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed03dd53fbaa7e4cbd69d59453e96ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outerPointsCount: 6
+  shapeRadius: 0.3
+  pointMass: 1
+  pointGravityScale: 1
+--- !u!114 &850970203316228443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350686683810322044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457ff3be158a44247b1209f16432e686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2651218574011533431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350686683810322044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08472a3fad5473841ab669297bd2c553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteControllerPrefab: {fileID: 3801822545662916330, guid: 6ba7f4192ac3ec546ae5978ababafccd, type: 3}
+  spriteShapes:
+  - {fileID: 11400000, guid: a3232c07c43b30345b6c73026affb8ec, type: 2}
+  - {fileID: 11400000, guid: c2a5076b89da1454aa46a7a47eabd1bf, type: 2}
+--- !u!114 &5776933717462065118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350686683810322044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69e59a651059d514197196e659f5bd8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxFontSize: 0.4
+  minFontSize: 0.1
+  fontSizeFactor: 0.07
