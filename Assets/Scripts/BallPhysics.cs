@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -5,6 +6,8 @@ public class BallPhysics : MonoBehaviour
 {
     [SerializeField] private float startingBallRadiusScale = 0.7f;
     [SerializeField] private float ballRadiusScaleDelta = 0.2f;
+    public Action<Ball> OnBallDestroyed;
+
 
     public void SetRadiusByIndex(int index)
     {
@@ -30,5 +33,12 @@ public class BallPhysics : MonoBehaviour
     {
         var circle = GetComponent<CircleCollider2D>();
         return circle.radius * transform.localScale.x;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.gameObject.TryGetComponent<Ball>(out var otherBall)) return;
+
+        this.gameObject.GetComponent<Ball>().Merge(otherBall);
     }
 }
